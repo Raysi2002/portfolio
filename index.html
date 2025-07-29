@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,9 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&family=Orbitron:wght@400;700;900&display=swap"
+        rel="stylesheet">
     <script src="https://unpkg.com/feather-icons"></script>
 
     <style>
@@ -32,7 +35,7 @@
         }
 
         .neon-text-pink {
-             text-shadow:
+            text-shadow:
                 0 0 5px rgba(236, 72, 153, 0.8),
                 0 0 10px rgba(236, 72, 153, 0.8),
                 0 0 20px rgba(236, 72, 153, 0.8),
@@ -44,7 +47,7 @@
             border: 2px solid #04d9ff;
             box-shadow: 0 0 10px #04d9ff, 0 0 20px #04d9ff, inset 0 0 10px #04d9ff;
         }
-        
+
         .neon-card {
             background-color: rgba(23, 23, 43, 0.5);
             border: 1px solid rgba(0, 172, 193, 0.3);
@@ -73,7 +76,7 @@
             text-shadow: none;
             box-shadow: 0 0 20px #04d9ff;
         }
-        
+
         .nav-link {
             position: relative;
             color: #e0e0e0;
@@ -109,28 +112,40 @@
         ::-webkit-scrollbar {
             width: 8px;
         }
+
         ::-webkit-scrollbar-track {
             background: #0d0c22;
         }
+
         ::-webkit-scrollbar-thumb {
             background: #04d9ff;
             border-radius: 10px;
             box-shadow: 0 0 5px #04d9ff;
         }
+
         ::-webkit-scrollbar-thumb:hover {
             background: #00b8d4;
         }
 
         @keyframes gradient-move {
-            0%, 100% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
+
+            0%,
+            100% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
         }
+
         .animate-gradient-text {
             background-size: 200% 200%;
             animation: gradient-move 3s ease-in-out infinite;
         }
     </style>
 </head>
+
 <body class="antialiased">
 
     <!-- Header and Navigation -->
@@ -138,7 +153,9 @@
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <nav class="flex items-center justify-between h-20">
                 <a href="#home" class="flex items-center">
-                    <img src="logo.png" alt="Aashish Logo" class="h-10 w-10 md:h-12 md:w-12 object-contain rounded-full shadow-lg border-2 border-cyan-400 neon-border bg-black p-1" style="background-color: #0d0c22;">
+                    <img src="logo.png" alt="Aashish Logo"
+                        class="h-10 w-10 md:h-12 md:w-12 object-contain rounded-full shadow-lg border-2 border-cyan-400 neon-border bg-black p-1"
+                        style="background-color: #0d0c22;">
                 </a>
                 <div class="hidden md:flex items-center space-x-8">
                     <a href="#about" class="nav-link font-semibold">About</a>
@@ -168,8 +185,10 @@
         <section id="home" class="min-h-screen flex items-center justify-center text-center">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
                 <div class="md:col-span-2 text-left">
-                    <h1 class="text-4xl md:text-6xl lg:text-7xl font-orbitron font-extrabold text-white uppercase flex items-center gap-4 min-h-[5.5rem] md:min-h-[7.5rem] lg:min-h-[9rem] leading-snug md:leading-[6rem] lg:leading-[7.5rem]">
-                        <span id="dynamic-name" class="animate-gradient-text bg-gradient-to-r from-pink-400 via-cyan-400 to-pink-400 bg-clip-text text-transparent drop-shadow-lg"></span>
+                    <h1
+                        class="text-4xl md:text-6xl lg:text-7xl font-orbitron font-extrabold text-white uppercase flex items-center gap-4 min-h-[5.5rem] md:min-h-[7.5rem] lg:min-h-[9rem] leading-snug md:leading-[6rem] lg:leading-[7.5rem]">
+                        <span id="dynamic-name"
+                            class="animate-gradient-text bg-gradient-to-r from-pink-400 via-cyan-400 to-pink-400 bg-clip-text text-transparent drop-shadow-lg"></span>
                         <span class="ml-2 animate-bounce text-pink-300 text-3xl">🚀</span>
                     </h1>
                     <p class="mt-4 text-xl md:text-2xl font-semibold neon-text-pink">
@@ -177,24 +196,33 @@
                         <span class="ml-2 animate-pulse text-cyan-300 text-2xl">✨</span>
                     </p>
                     <p class="mt-6 max-w-2xl text-lg text-gray-300">
-                        Motivated Computer Science student building scalable, real-world solutions with a passion for backend development, full-stack web applications, and Generative AI.
+                        Motivated Computer Science student building scalable, real-world solutions with a passion for
+                        backend development, full-stack web applications, and Generative AI.
                     </p>
                     <div class="mt-8 flex justify-start space-x-4">
-                        <a href="https://github.com/Raysi2002" target="_blank" class="text-gray-400 hover:text-cyan-400 transition-colors duration-300"><i data-feather="github" class="w-8 h-8"></i></a>
-                        <a href="https://linkedin.com/in/Raysi2002" target="_blank" class="text-gray-400 hover:text-cyan-400 transition-colors duration-300"><i data-feather="linkedin" class="w-8 h-8"></i></a>
-                        <a href="https://x.com/iRealAashish" target="_blank" class="text-gray-400 hover:text-cyan-400 transition-colors duration-300"><i data-feather="twitter" class="w-8 h-8"></i></a>
-                        <a href="https://facebook.com/Aashishray2002" target="_blank" class="text-gray-400 hover:text-cyan-400 transition-colors duration-300"><i data-feather="facebook" class="w-8 h-8"></i></a>
+                        <a href="https://github.com/Raysi2002" target="_blank"
+                            class="text-gray-400 hover:text-cyan-400 transition-colors duration-300"><i
+                                data-feather="github" class="w-8 h-8"></i></a>
+                        <a href="https://linkedin.com/in/Raysi2002" target="_blank"
+                            class="text-gray-400 hover:text-cyan-400 transition-colors duration-300"><i
+                                data-feather="linkedin" class="w-8 h-8"></i></a>
+                        <a href="https://x.com/iRealAashish" target="_blank"
+                            class="text-gray-400 hover:text-cyan-400 transition-colors duration-300"><i
+                                data-feather="twitter" class="w-8 h-8"></i></a>
+                        <a href="https://facebook.com/Aashishray2002" target="_blank"
+                            class="text-gray-400 hover:text-cyan-400 transition-colors duration-300"><i
+                                data-feather="facebook" class="w-8 h-8"></i></a>
                         <!-- Download Resume Button -->
                         <a href="resume.pdf" download
-                           class="ml-2 neon-button py-2 px-5 rounded-full text-base font-bold uppercase tracking-wider flex items-center space-x-2 shadow-lg shadow-pink-400/40 hover:scale-110 transition-transform duration-300 bg-gradient-to-r from-pink-500 via-pink-400 to-pink-300 border-2 border-pink-400 animate-pulse"
-                           style="color: #fff; text-shadow: 0 0 8px #ec4899, 0 0 16px #ec4899;"
-                           title="Download Resume">
+                            class="ml-2 neon-button py-2 px-5 rounded-full text-base font-bold uppercase tracking-wider flex items-center space-x-2 shadow-lg shadow-pink-400/40 hover:scale-110 transition-transform duration-300 bg-gradient-to-r from-pink-500 via-pink-400 to-pink-300 border-2 border-pink-400 animate-pulse"
+                            style="color: #fff; text-shadow: 0 0 8px #ec4899, 0 0 16px #ec4899;"
+                            title="Download Resume">
                             <i data-feather="download" class="w-5 h-5"></i>
                             <span>Download Resume</span>
                             <span class="ml-1 animate-bounce text-pink-200 text-xl">💖</span>
                         </a>
                     </div>
-                     <div class="mt-10">
+                    <div class="mt-10">
                         <a href="#contact" class="neon-button font-bold py-3 px-8 rounded-lg uppercase tracking-wider">
                             Get In Touch
                         </a>
@@ -203,13 +231,10 @@
                 <div class="flex justify-center">
                     <div class="relative w-56 h-56 md:w-72 md:h-72 lg:w-80 lg:h-80">
                         <div class="absolute inset-0 neon-border rounded-full animate-pulse"></div>
-                        <img 
-                            src="profile.png" 
-                            alt="Aashish Kumar Ray" 
+                        <img src="profile.png" alt="Aashish Kumar Ray"
                             class="w-full h-full object-cover rounded-full p-2 bg-black"
                             style="object-position: center top;"
-                            onerror="this.onerror=null;this.src='https://placehold.co/320x320/0d0c22/e0e0e0?text=Aashish';"
-                        >
+                            onerror="this.onerror=null;this.src='https://placehold.co/320x320/0d0c22/e0e0e0?text=Aashish';">
                     </div>
                 </div>
             </div>
@@ -217,17 +242,23 @@
 
         <!-- About Section -->
         <section id="about" class="py-20 lg:py-32">
-            <h2 class="text-3xl md:text-4xl font-orbitron font-bold text-center mb-12"><span class="text-cyan-400 neon-text">About</span> Me</h2>
+            <h2 class="text-3xl md:text-4xl font-orbitron font-bold text-center mb-12"><span
+                    class="text-cyan-400 neon-text">About</span> Me</h2>
             <div class="max-w-4xl mx-auto neon-card p-8 rounded-xl">
                 <p class="text-lg md:text-xl text-center leading-relaxed text-gray-300">
-                    I am a motivated Computer Science student with hands-on experience in Java, Spring Boot, Servlets, and full-stack web development. Skilled in building RESTful APIs, integrating MySQL, and deploying modern web applications. I'm also familiar with Generative AI tools and prompt engineering. My passion lies in backend development, and I am continuously learning to build scalable, real-world solutions that make an impact.
+                    I am a motivated Computer Science student with hands-on experience in Java, Spring Boot, Servlets,
+                    and full-stack web development. Skilled in building RESTful APIs, integrating MySQL, and deploying
+                    modern web applications. I'm also familiar with Generative AI tools and prompt engineering. My
+                    passion lies in backend development, and I am continuously learning to build scalable, real-world
+                    solutions that make an impact.
                 </p>
             </div>
         </section>
 
         <!-- Experience Section -->
         <section id="experience" class="py-20 lg:py-32">
-            <h2 class="text-3xl md:text-4xl font-orbitron font-bold text-center mb-12">Work <span class="text-cyan-400 neon-text">Experience</span></h2>
+            <h2 class="text-3xl md:text-4xl font-orbitron font-bold text-center mb-12">Work <span
+                    class="text-cyan-400 neon-text">Experience</span></h2>
             <div class="relative max-w-4xl mx-auto">
                 <!-- Vertical line -->
                 <div class="absolute left-1/2 transform -translate-x-1/2 h-full w-0.5 bg-cyan-400/30"></div>
@@ -235,7 +266,8 @@
                 <!-- Experience Item 1 (AI Intern - now first) -->
                 <div class="mb-16 flex items-center w-full">
                     <div class="hidden md:block w-5/12"></div>
-                    <div class="z-10 flex items-center justify-center w-8 h-8 bg-cyan-400 rounded-full ring-8 ring-offset-4 ring-offset-gray-900 ring-cyan-400/50 shadow-lg">
+                    <div
+                        class="z-10 flex items-center justify-center w-8 h-8 bg-cyan-400 rounded-full ring-8 ring-offset-4 ring-offset-gray-900 ring-cyan-400/50 shadow-lg">
                         <i data-feather="cpu" class="w-4 h-4 text-gray-900"></i>
                     </div>
                     <div class="w-full md:w-5/12 md:pl-8">
@@ -255,8 +287,9 @@
 
                 <!-- Experience Item 2 (Java Full Stack Intern - now second) -->
                 <div class="mb-16 flex flex-row-reverse items-center w-full">
-                     <div class="hidden md:block w-5/12"></div>
-                     <div class="z-10 flex items-center justify-center w-8 h-8 bg-cyan-400 rounded-full ring-8 ring-offset-4 ring-offset-gray-900 ring-cyan-400/50 shadow-lg">
+                    <div class="hidden md:block w-5/12"></div>
+                    <div
+                        class="z-10 flex items-center justify-center w-8 h-8 bg-cyan-400 rounded-full ring-8 ring-offset-4 ring-offset-gray-900 ring-cyan-400/50 shadow-lg">
                         <i data-feather="code" class="w-4 h-4 text-gray-900"></i>
                     </div>
                     <div class="w-full md:w-5/12 md:pr-8">
@@ -278,10 +311,11 @@
 
         <!-- Skills & Education Section -->
         <section id="skills" class="py-20 lg:py-32">
-             <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
                 <!-- Technical Skills -->
                 <div>
-                    <h2 class="text-3xl md:text-4xl font-orbitron font-bold text-center mb-12">Technical <span class="text-cyan-400 neon-text">Skills</span></h2>
+                    <h2 class="text-3xl md:text-4xl font-orbitron font-bold text-center mb-12">Technical <span
+                            class="text-cyan-400 neon-text">Skills</span></h2>
                     <div class="neon-card p-8 rounded-xl">
                         <div class="mb-6">
                             <h3 class="text-xl font-bold text-pink-400 mb-4">Languages</h3>
@@ -314,23 +348,29 @@
 
                 <!-- Education -->
                 <div>
-                    <h2 class="text-3xl md:text-4xl font-orbitron font-bold text-center mb-12"><span class="text-cyan-400 neon-text">Education</span></h2>
+                    <h2 class="text-3xl md:text-4xl font-orbitron font-bold text-center mb-12"><span
+                            class="text-cyan-400 neon-text">Education</span></h2>
                     <div class="neon-card p-8 rounded-xl h-full space-y-8">
                         <div>
                             <h3 class="text-xl font-bold text-white">Bachelor of Engineering - Computer Science</h3>
-                            <p class="text-md font-semibold text-pink-400 mt-1">Godavari Institute of Engineering and Technology (Autonomous)</p>
+                            <p class="text-md font-semibold text-pink-400 mt-1">Godavari Institute of Engineering and
+                                Technology (Autonomous)</p>
                             <p class="text-gray-400 mt-2">Affiliated to JNTU Kakinada</p>
                             <div class="flex flex-wrap items-center gap-4 mt-2">
                                 <span class="text-cyan-400 font-semibold">Aug 2022 - Aug 2026</span>
-                                <span class="bg-cyan-900/40 text-cyan-300 px-3 py-1 rounded-full text-sm font-semibold neon-border">CGPA: 8.8</span>
+                                <span
+                                    class="bg-cyan-900/40 text-cyan-300 px-3 py-1 rounded-full text-sm font-semibold neon-border">CGPA:
+                                    8.8</span>
                             </div>
                         </div>
                         <div>
                             <h3 class="text-xl font-bold text-white">Diploma in Mechanical Engineering (India)</h3>
-                            <p class="text-md font-semibold text-pink-400 mt-1">Haryana State Board Of Technical Education, Panchkula (Haryana)</p>
+                            <p class="text-md font-semibold text-pink-400 mt-1">Haryana State Board Of Technical
+                                Education, Panchkula (Haryana)</p>
                             <div class="flex flex-wrap items-center gap-4 mt-2">
                                 <span class="text-cyan-400 font-semibold">Aug 2018 - Aug 2021</span>
-                                <span class="bg-cyan-900/40 text-cyan-300 px-3 py-1 rounded-full text-sm font-semibold neon-border">86%</span>
+                                <span
+                                    class="bg-cyan-900/40 text-cyan-300 px-3 py-1 rounded-full text-sm font-semibold neon-border">86%</span>
                             </div>
                         </div>
                     </div>
@@ -338,9 +378,10 @@
             </div>
         </section>
 
-         <!-- Hobbies Section -->
+        <!-- Hobbies Section -->
         <section id="hobbies" class="py-20 lg:py-32">
-            <h2 class="text-3xl md:text-4xl font-orbitron font-bold text-center mb-12">Interests & <span class="text-cyan-400 neon-text">Hobbies</span></h2>
+            <h2 class="text-3xl md:text-4xl font-orbitron font-bold text-center mb-12">Interests & <span
+                    class="text-cyan-400 neon-text">Hobbies</span></h2>
             <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 text-center">
                 <div class="hobby-item">Prompt Engineering</div>
                 <div class="hobby-item">Digital Notebooks</div>
@@ -353,23 +394,33 @@
 
         <!-- Contact Section -->
         <section id="contact" class="py-20 lg:py-32 text-center">
-            <h2 class="text-3xl md:text-4xl font-orbitron font-bold mb-4">Get In <span class="text-cyan-400 neon-text">Touch</span></h2>
+            <h2 class="text-3xl md:text-4xl font-orbitron font-bold mb-4">Get In <span
+                    class="text-cyan-400 neon-text">Touch</span></h2>
             <p class="max-w-2xl mx-auto text-lg text-gray-300 mb-8">
                 I'm currently seeking new opportunities and am open to collaborations. Feel free to reach out!
             </p>
             <div class="neon-card max-w-sm mx-auto p-8 rounded-xl">
-                 <a href="mailto:2002raysi@gmail.com" class="text-lg text-pink-400 hover:text-pink-300 transition-colors duration-300 neon-text-pink">2002raysi@gmail.com</a>
-                 <p class="text-lg text-cyan-400 mt-2 neon-text">+91-7762878177</p>
-                 <div class="mt-8 flex justify-center space-x-6">
-                    <a href="https://github.com/Raysi2002" target="_blank" class="text-gray-400 hover:text-cyan-400 transition-colors duration-300"><i data-feather="github" class="w-8 h-8"></i></a>
-                    <a href="https://linkedin.com/in/Raysi2002" target="_blank" class="text-gray-400 hover:text-cyan-400 transition-colors duration-300"><i data-feather="linkedin" class="w-8 h-8"></i></a>
-                    <a href="https://x.com/iRealAashish" target="_blank" class="text-gray-400 hover:text-cyan-400 transition-colors duration-300"><i data-feather="twitter" class="w-8 h-8"></i></a>
-                    <a href="https://facebook.com/Aashishray2002" target="_blank" class="text-gray-400 hover:text-cyan-400 transition-colors duration-300"><i data-feather="facebook" class="w-8 h-8"></i></a>
+                <a href="mailto:2002raysi@gmail.com"
+                    class="text-lg text-pink-400 hover:text-pink-300 transition-colors duration-300 neon-text-pink">2002raysi@gmail.com</a>
+                <p class="text-lg text-cyan-400 mt-2 neon-text">+91-7762878177</p>
+                <div class="mt-8 flex justify-center space-x-6">
+                    <a href="https://github.com/Raysi2002" target="_blank"
+                        class="text-gray-400 hover:text-cyan-400 transition-colors duration-300"><i
+                            data-feather="github" class="w-8 h-8"></i></a>
+                    <a href="https://linkedin.com/in/Raysi2002" target="_blank"
+                        class="text-gray-400 hover:text-cyan-400 transition-colors duration-300"><i
+                            data-feather="linkedin" class="w-8 h-8"></i></a>
+                    <a href="https://x.com/iRealAashish" target="_blank"
+                        class="text-gray-400 hover:text-cyan-400 transition-colors duration-300"><i
+                            data-feather="twitter" class="w-8 h-8"></i></a>
+                    <a href="https://facebook.com/Aashishray2002" target="_blank"
+                        class="text-gray-400 hover:text-cyan-400 transition-colors duration-300"><i
+                            data-feather="facebook" class="w-8 h-8"></i></a>
                 </div>
             </div>
         </section>
     </main>
-    
+
     <!-- Footer -->
     <footer class="border-t border-cyan-400/20 py-6 text-center">
         <p class="text-gray-400">&copy; 2025 Aashish Kumar Ray. All Rights Reserved.</p>
@@ -385,7 +436,7 @@
         mobileMenuButton.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
         });
-        
+
         // Close mobile menu when a link is clicked
         document.querySelectorAll('#mobile-menu a').forEach(link => {
             link.addEventListener('click', () => {
@@ -397,74 +448,87 @@
         const navbar = document.getElementById('navbar');
         window.addEventListener('scroll', () => {
             if (window.scrollY > 50) {
-                navbar.classList.add('bg-black', 'bg-opacity-80', 'backdrop-blur-sm', 'shadow-lg', 'shadow-cyan-500/10');
+                navbar.classList.add('bg-black', 'bg-opacity-80', 'backdrop-blur-sm', 'shadow-lg',
+                    'shadow-cyan-500/10');
             } else {
-                navbar.classList.remove('bg-black', 'bg-opacity-80', 'backdrop-blur-sm', 'shadow-lg', 'shadow-cyan-500/10');
+                navbar.classList.remove('bg-black', 'bg-opacity-80', 'backdrop-blur-sm', 'shadow-lg',
+                    'shadow-cyan-500/10');
             }
         });
 
         // Animated typing effect for name and job title
-        document.addEventListener("DOMContentLoaded", function() {
-            // Dynamic Name Animation
-            const nameVariants = [
-                "Aashish K. Ray",        // Nepali (Devanagari)
-                "आशीष कुमार राय 🚀",          // Hindi + Emoji for fun
-                "آشیش کمار رائے",               // Urdu
-                "আশীষ কুমার রায়"             // Bengali
-        
+        document.addEventListener("DOMContentLoaded", function () {
+            // --- Dynamic Name Animation ---
+            const nameVariants = [ // Full-width aesthetic (Japanese-style monospace)
+                "𝘼𝙖𝙨𝙝𝙞𝙨𝙝 𝙆. 𝙍𝙖𝙮", // Italic typewriter (modern coding feel)
+                "𝒜𝒶𝓈𝒽𝒾𝓈𝒽 𝒦. 𝑅𝒶𝓎", // Cursive calligraphy (personal flair)
+                "𝓐𝓪𝓼𝓱𝓲𝓼𝓱 𝓡𝓪𝔂", // Brand-style initials + handwritten full name
+                "AASHISH ⚡️ RAY", // Bold with lightning emoji (energy/personal spark)
+                "👨‍🚀 आशीष कुमार राय ✨", // Hindi with minimal emoji (professional + stylish)
+                "آشیش کمار رائے • Dev", // Urdu with a modern suffix
+                "আশীষ রায় 👨‍💻", // Bengali with developer emoji
+                "A𝓪𝓼𝓱𝓲𝓼𝓱.𝓡 (⚙️Code Mode)" // Creative header-style variant
             ];
-            let nameIndex = 0, nameChar = 0, nameCurrent = '', nameDeleting = false;
+            let nameIndex = 0,
+                nameChar = 0,
+                nameCurrent = '',
+                nameDeleting = false;
             const nameEl = document.getElementById('dynamic-name');
+
             function typeName() {
                 if (!nameEl) return;
                 if (!nameDeleting && nameChar <= nameVariants[nameIndex].length) {
                     nameCurrent = nameVariants[nameIndex].substring(0, nameChar++);
                     nameEl.innerHTML = nameCurrent;
-                    setTimeout(typeName, 180); // was 90
+                    setTimeout(typeName, 160); // slower typing
                 } else if (nameDeleting && nameChar >= 0) {
                     nameCurrent = nameVariants[nameIndex].substring(0, nameChar--);
                     nameEl.innerHTML = nameCurrent;
-                    setTimeout(typeName, 80); // was 40
+                    setTimeout(typeName, 70);
                 } else if (!nameDeleting) {
                     nameDeleting = true;
-                    setTimeout(typeName, 2400); // was 1200
+                    setTimeout(typeName, 1800); // pause before deleting
                 } else {
                     nameDeleting = false;
                     nameIndex = (nameIndex + 1) % nameVariants.length;
-                    setTimeout(typeName, 1000); // was 500
+                    setTimeout(typeName, 600); // pause before next name
                 }
             }
-            typeName();
+            setTimeout(typeName, 400); // Initial delay for cool effect
 
-            // Animated typing effect for job title
+            // --- Dynamic Job Title Animation (staggered start) ---
             const titles = [
                 "Java Developer",
                 "AI Enthusiast",
                 "Full Stack Coder",
                 "Prompt Engineer"
             ];
-            let i = 0, j = 0, current = '', isDeleting = false;
+            let i = 0,
+                j = 0,
+                current = '',
+                isDeleting = false;
             const el = document.getElementById('job-title');
-            function type() {
+
+            function typeTitle() {
                 if (!el) return;
                 if (!isDeleting && j <= titles[i].length) {
                     current = titles[i].substring(0, j++);
                     el.innerHTML = current;
-                    setTimeout(type, 160); // was 80
+                    setTimeout(typeTitle, 120); // slightly different speed
                 } else if (isDeleting && j >= 0) {
                     current = titles[i].substring(0, j--);
                     el.innerHTML = current;
-                    setTimeout(type, 80); // was 40
+                    setTimeout(typeTitle, 60);
                 } else if (!isDeleting) {
                     isDeleting = true;
-                    setTimeout(type, 2400); // was 1200
+                    setTimeout(typeTitle, 2200); // longer pause before deleting
                 } else {
                     isDeleting = false;
                     i = (i + 1) % titles.length;
-                    setTimeout(type, 800); // was 400
+                    setTimeout(typeTitle, 900); // longer pause before next title
                 }
             }
-            type();
+            setTimeout(typeTitle, 1600); // Staggered start for job title
         });
 
         // Custom styles for generated elements
@@ -501,4 +565,5 @@
         document.head.appendChild(style);
     </script>
 </body>
+
 </html>
